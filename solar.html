@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Solar | Calculations</title>
+    <style>
+        .row {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .calculations{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+            <label class="form-label">Energy Consumption</label>
+            <input type="text" class="form-control" id="energy" required>
+
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Battery Capacity</label>
+            <input type="text" class="form-control" id="capacity" required>
+
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Solar Generation</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text">
+                    <ion-icon name="telescope"></ion-icon>
+                </span>
+                <input type="text" class="form-control" id="solar" required>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label class="form-label">Electricity cost per-unit</label>
+
+            <input type="text" class="form-control" id="cost" required>
+
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-danger" type="submit">Calculate</button>
+        </div>
+    </form>
+    <div class="calculations">
+        <p class="energyNeeded">Energy needed : <span class="energies"></span></p>
+        <p class="energyNeeded">Total Cost per-unit : <span class="per-unit"></span></p>
+    </div>
+
+    <script src="/public/script/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
