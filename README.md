@@ -6,7 +6,7 @@
 3. Bootstrap Framework(For components)
 4. Vanilla Javascript (For calculation)
 5. Firebase-Authentication (For signing up user and signing in user)
-6. 
+6. Netlify (For hosting my page)
 ## Sign in user
 > I used the index.html file to create <br />
 > a login form for the user
