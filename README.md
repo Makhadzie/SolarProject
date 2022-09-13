@@ -14,5 +14,5 @@
 ## Creating a profile
 > I used the register.html file to take my user inputs <br />
 > and also used firebase to take that data and creating a user in my Database. <br />
-# Calculations
+## Calculations
 > Solar.html was used and for the calculation Vanilla Javascript was used.
