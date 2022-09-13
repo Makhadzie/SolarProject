@@ -11,11 +11,9 @@ let calculatedCost = document.querySelector('.per-unit')
 let form = document.querySelector('.row');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    energyNeeded = energyConsumption.value - solarGeneration.value + batteryCapacity.value;
-    costPer = costPerUnit.value * hours;
-
+    let just = Number(solarGeneration.value) + Number(batteryCapacity.value);
+    energyNeeded = Number(energyConsumption.value) - just;
+    costPer = Number(costPerUnit.value) * hours;
     calculatedEnergy.textContent = energyNeeded;
-    calculatedCost.textContent =costPer;
-
-    
+    calculatedCost.textContent = costPer;
 })
